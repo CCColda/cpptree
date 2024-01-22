@@ -43,7 +43,7 @@ protected:
 	inline virtual void onSignal(const std::string &sig, const BaseNode *parent) {}
 
 	//! @brief Called to check whether a node can get the given parent
-	inline virtual bool isValidParent(const BaseNode *parent) const;
+	virtual bool isValidParent(const BaseNode *parent) const;
 
 protected:
 	//! @brief Adds a child to the list of children, calls the appropriate callbacks
